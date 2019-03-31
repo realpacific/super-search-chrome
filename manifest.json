@@ -1,0 +1,24 @@
+{
+    "name": "Super Search",
+    "version": "1.0",
+    "description": "Search a website directly from your browser's addresss bar.",
+    "manifest_version": 2,
+
+    "browser_action": {
+        "default_icon": "search.png",
+        "default_title": "Super search"
+    },
+    "permissions": ["activeTab"],
+    "background": {
+        "scripts": [
+            "index.js"
+        ],
+        "persistent": false
+    },
+    "omnibox": {
+        "keyword": "ss"
+    },
+    "icons": {
+        "16": "search.png"
+    }
+}
